@@ -1,0 +1,26 @@
+{
+  "name": "fabien0102.com",
+  "version": "0.0.1",
+  "description": "Fabien0102's website",
+  "main": "index.js",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "author": "fabien0102 <fabien0102@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules",
+      "/.cache"
+    ]
+  },
+  "dependencies": {
+    "gatsby": "^1.9.4",
+    "gatsby-link": "^1.6.12",
+    "jest": "^20.0.4",
+    "react-lottie": "^0.2.1"
+  }
+}

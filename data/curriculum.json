@@ -1,0 +1,14 @@
+[
+  {
+    "lang": "fr",
+    "date": "Février 2017",
+    "title": "Mission freelance pour Actronika",
+    "description": "Développement d’une solution pour générer des effects haptiques.\n Formation de l'équipe à React/Redux/Typescript"
+  },
+  {
+    "lang": "en",
+    "date": "February 2017",
+    "title": "Freelance mission for Actronika",
+    "description": "Development of a web software to generate haptics effects.\n Formation of team on React/Redux/Typescript"
+  }
+]
