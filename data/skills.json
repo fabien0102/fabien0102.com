@@ -1,6 +1,6 @@
 [
   {
-    "title": "Fullstack JavaScript",
+    "title": {"fr": "Fullstack JavaScript", "en": "Fullstack JavaScript"},
     "logos": [
       {"name": "React", "src": "", "url": ""},
       {"name": "Redux", "src": "", "url": ""},
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "title": "DevOps",
+    "title": {"fr": "DevOps", "en": "DevOps"},
     "logos": [
       {"name": "Docker", "src": "", "url": ""},
       {"name": "AWS", "src": "", "url": ""},
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "title": "Gestion de projets",
+    "title": {"fr": "Gestion de projets", "en": "Project manager"},
     "logos": [
       {"name": "LEAN", "src": "", "url": ""},
       {"name": "Kanban", "src": "", "url": ""},

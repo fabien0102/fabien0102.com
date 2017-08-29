@@ -19,17 +19,21 @@ const style = {
   }
 };
 
-export default () => (
-  <div>
-    <div style={style.container}>
-      <Skill data={skillsData[0]} containerStyle={style.item} />
-      <Avatar />
-      <div style={style.item}>
-        <Skill data={skillsData[1]} />
-        <Skill data={skillsData[2]} />
-      </div>
-    </div>
+export default ({ lang }) => {
+  lang = lang || "fr";
 
-    <Curriculum />
-  </div>
-);
+  return (
+    <div>
+      <div style={style.container}>
+        <Skill data={skillsData[0]} containerStyle={style.item} lang={lang} />
+        <Avatar />
+        <div style={style.item}>
+          <Skill data={skillsData[1]} lang={lang} />
+          <Skill data={skillsData[2]} lang={lang} />
+        </div>
+      </div>
+
+      <Curriculum lang={lang} />
+    </div>
+  );
+};

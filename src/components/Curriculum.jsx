@@ -1,3 +1,3 @@
 import React from "react";
 
-export default () => <div>Curriculum</div>
+export default ({ lang }) => <div>Curriculum</div>;

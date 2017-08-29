@@ -12,9 +12,9 @@ const style = {
   }
 };
 
-export default ({ data: { title, logos }, containerStyle }) => (
+export default ({ data: { title, logos }, lang, containerStyle }) => (
   <div style={containerStyle}>
-    <h1>{title}</h1>
+    <h1>{title[lang]}</h1>
     <ul style={style.list}>
       {logos.map(logo => (
         <li style={style.item} key={logo.name}>{logo.name}</li>
