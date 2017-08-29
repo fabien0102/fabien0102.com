@@ -9,6 +9,7 @@ const style = {
   container: {
     display: "flex",
     justifyContent: "center",
+    flexWrap: "wrap",
     alignItems: "center",
     marginTop: 30,
     textAlign: "center"
@@ -16,7 +17,8 @@ const style = {
   item: {
     flexBasis: 0,
     flexGrow: 1,
-    maxWidth: 500
+    maxWidth: 450,
+    minWidth: 300
   }
 };
 
