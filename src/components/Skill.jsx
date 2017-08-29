@@ -17,7 +17,13 @@ export default ({ data: { title, logos }, lang, containerStyle }) => (
     <h1>{title[lang]}</h1>
     <ul style={style.list}>
       {logos.map(logo => (
-        <li style={style.item} key={logo.name}>{logo.name}</li>
+        <li style={style.item} key={logo.name}>
+          <a href={logo.url} target="blank">
+            {logo.src
+              ? <img src={logo.src} alt={logo.name} height={40} />
+              : logo.name}
+          </a>
+        </li>
       ))}
     </ul>
   </div>

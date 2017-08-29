@@ -15,7 +15,8 @@ const style = {
   },
   item: {
     flexBasis: 0,
-    flexGrow: 1
+    flexGrow: 1,
+    maxWidth: 500
   }
 };
 
