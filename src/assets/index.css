@@ -27,7 +27,7 @@ body {
   transform: scale(-1, 1) translate(670px, 0);
 }
 
-.curriculum-item--reverse p,
+.curriculum-item--reverse div,
 .curriculum-item--reverse h2,
 .curriculum-item--reverse h3 {
   text-align: right;
@@ -48,7 +48,7 @@ body {
   margin: 0.2rem 0;
 }
 
-.curriculum-item p {
+.curriculum-item div {
   font-size: 0.9rem;
   margin: 0.5rem 0;
   word-break: break-word;

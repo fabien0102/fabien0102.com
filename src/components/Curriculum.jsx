@@ -1,6 +1,5 @@
 import React from "react";
 
-const isLang = lang => xp => xp.lang === lang;
 const isNotEmpty = a => !!a;
 
 const style = {
@@ -14,12 +13,7 @@ const style = {
 export default ({ lang, data }) => (
   <div style={style.container}>
     <ul className="curriculum-list">
-      {data.filter(isLang(lang)).map(({
-        date,
-        title,
-        description,
-        keywords
-      }, i) => (
+      {data.map(({ node }, i) => (
         <li
           key={i}
           className={
@@ -28,10 +22,10 @@ export default ({ lang, data }) => (
               : "curriculum-item curriculum-item--reverse"
           }
         >
-          <h3>{date}</h3>
-          <h2>{title}</h2>
-          {description.split("\n").map((desc, i) => <p key={i}>{desc}</p>)}
-          <p>{keywords.map(a => <i key={a}>#{a}</i>)}</p>
+          <h3>{node.frontmatter.date}</h3>
+          <h2>{node.frontmatter.title}</h2>
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+          <div>{node.frontmatter.keywords.map(a => <i key={a}>#{a}</i>)}</div>
         </li>
       ))}
     </ul>

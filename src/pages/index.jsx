@@ -5,7 +5,6 @@ import Skill from "../components/Skill";
 import Curriculum from "../components/Curriculum";
 
 import skillsData from "../../data/skills.json";
-import curriculumData from "../../data/curriculum.json";
 
 const style = {
   container: {
@@ -24,7 +23,7 @@ const style = {
   }
 };
 
-export default ({ lang }) => {
+export default ({ lang, data }) => {
   lang = lang || "fr";
 
   return (
@@ -38,7 +37,28 @@ export default ({ lang }) => {
         </div>
       </div>
 
-      <Curriculum lang={lang} data={curriculumData} />
+      <Curriculum lang={lang} data={data.curriculum.edges} />
     </div>
   );
 };
+
+export const pageQuery = graphql`
+query IndexQuery {
+  curriculum: allMarkdownRemark(
+    filter: {
+      fileAbsolutePath: {regex: "//fr//"}
+    }
+  ) {
+    edges {
+      node {
+        html
+        frontmatter {
+          title
+          date
+          keywords
+        }
+      }
+    }
+  }
+}
+`;
