@@ -23,8 +23,8 @@ export default class Avatar extends React.Component {
       <div onClick={this.onClick.bind(this)}>
         <Lottie
           options={animationOptions}
-          height={400}
-          width={450}
+          height={350}
+          width={350}
           ref={a => this.avatar = a}
         />
       </div>

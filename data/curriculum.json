@@ -1,9 +1,34 @@
 [
   {
     "lang": "fr",
+    "date": "Avril 2017",
+    "title": "Freelance - Actronika",
+    "description": "Développement du logiciel Tactronik pour les kits de démonstration de la puce.\n Ce logiciel, réalisé avec Electron/React/Redux/Redux-observable/Jest, permet paramétrer les différents effets haptiques prédéfinis et les envoyer à la carte de démonstration via le port série. \n Le challenge de ce projet était d'avoir une couche de communication série, et cela sans avoir à disposition la carte électronique pour tester avant la livraison. \n Grâce à redux-observable et une batterie de tests unitaires, la connection c'est fait sans accroc, le projet est facilement maintenable et évolutif.",
+    "keywords": [
+      "electron",
+      "react",
+      "redux",
+      "redux−observable",
+      "serial−port",
+      "typescript",
+      "jest",
+      "TDD",
+      "github"
+    ]
+  },
+  {
+    "lang": "fr",
     "date": "Février 2017",
-    "title": "Mission freelance pour Actronika",
-    "description": "Développement d’une solution pour générer des effects haptiques.\n Formation de l'équipe à React/Redux/Typescript"
+    "title": "Freelance - Actronika",
+    "description": "Développement d’une solution pour générer des effects haptiques.\n Un projet rapide pour un POC client, le but étant de générer des effets haptiques assez compliqués dans le but d'exporter un csv \n Le challenge était la rapidité du projet, c'est pourquoi nous sommes partie sur une solution 100% web avec un export csv. \n Au final le produit répond plutôt bien, mieux qu'espéré, sachant qu'un navigateur n'est clairement pas la solution idéale pour générer des centaines de millier de points :) \n J'ai aussi profité de cette première mission pour former l'équipe à React/Redux/Typescript/Jest. L'objectif étant une reprise facile du projet si besoin !",
+    "keywords": [
+      "react",
+      "redux",
+      "typescript",
+      "jest",
+      "TDD",
+      "github"
+    ]
   },
   {
     "lang": "en",

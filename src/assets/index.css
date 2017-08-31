@@ -1,6 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
   margin: 0;
-  padding: 1.5em;
-  background-color: #195080;
+  padding: 0 1.5rem;
+  background-color: #012f56;
+  font-family: 'Raleway', sans-serif;
   color: white;
+}
+
+.curriculum-list {
+  border-left: 6px solid #3ea191;
+  padding: 1rem 2rem;
+  margin-left: 2rem;
+  max-width: 600px;
+  transform: translate(48%, 0);
+}
+
+.curriculum-item {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+  list-style: none;
+}
+
+.curriculum-item--reverse {
+  transform: scale(-1, 1) translate(670px, 0);
+}
+
+.curriculum-item--reverse p,
+.curriculum-item--reverse h2,
+.curriculum-item--reverse h3 {
+  text-align: right;
+  transform: scale(-1, 1);
+}
+
+.curriculum-item h3 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  color: #3ea191;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.curriculum-item h2 {
+  padding: 0;
+  margin: 0.2rem 0;
+}
+
+.curriculum-item p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  word-break: break-word;
+}
+
+.curriculum-item i {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  line-height: 1.6rem;
+  background-color: #3ea191;
+  color: white;
+  border-radius: 5px;
+}
+
+.curriculum-item::before {
+  position: absolute;
+  left: -2.2rem;
+  top: 1.2rem;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background-color: #43bda6;
+  border: 4px #3ea191 solid;
+  transform: translate(-50%, 0);
 }

@@ -3,7 +3,9 @@ import React from "react";
 import Avatar from "../components/Avatar";
 import Skill from "../components/Skill";
 import Curriculum from "../components/Curriculum";
+
 import skillsData from "../../data/skills.json";
+import curriculumData from "../../data/curriculum.json";
 
 const style = {
   container: {
@@ -36,7 +38,7 @@ export default ({ lang }) => {
         </div>
       </div>
 
-      <Curriculum lang={lang} />
+      <Curriculum lang={lang} data={curriculumData} />
     </div>
   );
 };
