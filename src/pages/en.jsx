@@ -9,6 +9,9 @@ query IndexEnQuery {
     filter: {
       fileAbsolutePath: {regex: "//en//"}
     }
+    sort: {
+      order: DESC, fields:[fileAbsolutePath]
+    }
   ) {
     edges {
       node {

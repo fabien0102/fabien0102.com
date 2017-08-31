@@ -48,6 +48,9 @@ query IndexQuery {
     filter: {
       fileAbsolutePath: {regex: "//fr//"}
     }
+    sort: {
+      order: DESC, fields:[fileAbsolutePath]
+    }
   ) {
     edges {
       node {
