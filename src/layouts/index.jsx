@@ -10,7 +10,14 @@ export const style = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    padding: "0 1.5rem"
+  },
+  footer: {
+    backgroundColor: "#01223e",
+    padding: "0.5rem 2rem",
+    fontSize: "0.8rem",
+    boxShadow: "0 0 20px rgba(62, 161, 145,0.2)"
   }
 };
 
@@ -22,12 +29,19 @@ export default ({ children }) => (
       <h1>@fabien0102</h1>
       <SocialLinks data={socialLinksData} />
       <div>
-        <Link to="/"><img src="flag-fr.svg" height={25} alt="fr"/></Link> 
-        <Link to="/en"><img src="flag-en.svg" height={25} alt="en"/></Link>
+        <Link to="/"><img src="flag-fr.svg" height={25} alt="fr" /></Link>&nbsp;
+        <Link to="/en"><img src="flag-en.svg" height={25} alt="en" /></Link>
       </div>
     </header>
     <main>
       {children()}
     </main>
+    <footer style={style.footer}>
+      <p>
+        © {new Date().getFullYear() + " "}
+        - Fabien BERNARD (fabien0102)
+        - Made with <span style={{ color: "#43bda6" }}>❤</span> with Gatsby
+      </p>
+    </footer>
   </div>
 );
