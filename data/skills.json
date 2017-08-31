@@ -27,7 +27,7 @@
     ]
   },
   {
-    "title": {"fr": "Gestion de projets", "en": "Project manager"},
+    "title": {"fr": "Gestion de projet", "en": "Project manager"},
     "logos": [
       {"name": "LEAN", "url": "https://fr.wikipedia.org/wiki/Lean_(production)"},
       {"name": "Kanban", "url": "https://fr.wikipedia.org/wiki/Kanban"},

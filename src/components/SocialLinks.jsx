@@ -3,7 +3,8 @@ const styles = {
   list: {
     display: "flex",
     justifyContent: "flex-end",
-    listStyle: "none"
+    listStyle: "none",
+    flexGrow: 1
   },
   item: {
     margin: "0 1.2em"
