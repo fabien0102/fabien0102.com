@@ -19,4 +19,6 @@ Ce logiciel, réalisé avec Electron/React/Redux/Redux-observable/Jest, permet p
 
 Le challenge de ce projet était d'avoir une couche de communication série, et cela sans avoir à disposition la carte électronique pour tester avant la livraison. 
 
-Grâce à redux-observable et une batterie de tests unitaires, la connection s'est fait sans accroc, le projet est facilement maintenable et évolutif.
+Grâce à redux-observable et une batterie de tests unitaires, la connection s'est fait sans accroc, le projet est facilement maintenable et évolutif. Et ça, c'est cool !
+
+[![web](web-badge.svg)](http://www.actronika.com)

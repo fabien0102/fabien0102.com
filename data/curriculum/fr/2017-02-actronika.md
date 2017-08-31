@@ -19,3 +19,5 @@ Le challenge était la rapidité du projet, c'est pourquoi nous sommes partie su
 Au final le produit répond plutôt bien, mieux qu'espéré, sachant qu'un navigateur n'est clairement pas la solution idéale pour générer des centaines de millier de points :) 
 
 J'ai aussi profité de cette première mission pour former l'équipe à React/Redux/Typescript/Jest. L'objectif étant une reprise facile du projet si besoin !
+
+[![web](web-badge.svg)](http://www.actronika.com)
