@@ -1,16 +1,16 @@
 import React from "react";
-import Lottie from "react-lottie";
+import Bodymovin from "@fabien0102/react-bodymovin";
 import * as animationData from "../../data/avatar-animation.json";
 
 export default class Avatar extends React.Component {
   componentDidMount() {
     // Start animation
-    this.avatar.anim.playSegments([0, 57], true);
+    this.avatar.animation.playSegments([0, 57], true);
   }
 
   onClick() {
-    // Wink animation
-    this.avatar.anim.playSegments([60, 80], true);
+    // Wink ation
+    this.avatar.animation.playSegments([60, 80], true);
   }
 
   render() {
@@ -21,7 +21,7 @@ export default class Avatar extends React.Component {
     };
     return (
       <div onClick={this.onClick.bind(this)}>
-        <Lottie
+        <Bodymovin
           options={animationOptions}
           height={350}
           width={350}
