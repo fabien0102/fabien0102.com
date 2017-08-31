@@ -18,7 +18,7 @@
     ]
   },
   "dependencies": {
-    "gatsby": "^1.9.4",
+    "gatsby": "^1.9.18",
     "gatsby-link": "^1.6.12",
     "gatsby-source-filesystem": "^1.4.9",
     "gatsby-transformer-remark": "^1.7.5",
