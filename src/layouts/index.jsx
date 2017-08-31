@@ -39,7 +39,7 @@ export default ({ children }) => (
     <footer style={style.footer}>
       <p>
         © {new Date().getFullYear() + " "}
-        - Fabien BERNARD (fabien0102)
+        - <span style={{ color: "#43bda6" }}>Fabien BERNARD (fabien0102) </span>
         - Made with <span style={{ color: "#43bda6" }}>❤</span> with Gatsby
       </p>
     </footer>
