@@ -19,6 +19,12 @@ export const style = {
     fontSize: "0.8rem",
     boxShadow: "0 0 20px rgba(62, 161, 145,0.2)",
     textAlign: "center"
+  },
+  langs: {
+    display: "flex",
+    flexDirection: "column",
+    position: "relative",
+    top: "0.6rem"
   }
 };
 
@@ -29,8 +35,8 @@ export default ({ children }) => (
     <header style={style.header}>
       <h1>@fabien0102</h1>
       <SocialLinks data={socialLinksData} />
-      <div>
-        <Link to="/"><img src="flag-fr.svg" height={25} alt="fr" /></Link>&nbsp;
+      <div style={style.langs}>
+        <Link to="/"><img src="flag-fr.svg" height={25} alt="fr" /></Link>
         <Link to="/en"><img src="flag-en.svg" height={25} alt="en" /></Link>
       </div>
     </header>
