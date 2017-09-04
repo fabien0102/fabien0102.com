@@ -52,6 +52,7 @@ export default class HTML extends React.Component {
           <link rel="manifest" href="/manifest.json" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3ea191" />
           <meta name="theme-color" content="#ffffff" />
+          <title>fabien0102</title>
           {css}
         </head>
         <body>
