@@ -31,9 +31,9 @@ a, a:visited, a:hover {
   transform: scale(-1, 1) translate(670px, 0);
 }
 
-.curriculum-item--reverse div,
-.curriculum-item--reverse h2,
-.curriculum-item--reverse h3 {
+.curriculum-item--reverse > div,
+.curriculum-item--reverse > h2,
+.curriculum-item--reverse > h3 {
   transform: scale(-1, 1);
 }
 
