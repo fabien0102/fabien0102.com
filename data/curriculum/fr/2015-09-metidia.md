@@ -1,6 +1,6 @@
 ---
 date: 2014 - 2016
-title: Associé et CTO à Metidia
+title: CTO et Associé à Metidia
 keywords:
   - backbonejs
   - nodejs
