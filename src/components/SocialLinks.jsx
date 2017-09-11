@@ -1,4 +1,6 @@
 import React from "react";
+import ClipboardButton from "react-clipboard.js";
+
 const styles = {
   list: {
     display: "flex",
@@ -11,13 +13,21 @@ const styles = {
   }
 };
 
-export default ({ data }) => (
+export default ({ data, onClipboardSuccess }) => (
   <ul css={styles.list}>
     {data.map(link => (
       <li css={styles.item} key={link.name}>
-        <a href={link.href} target="blank">
-          <img height={30} src={link.name + ".svg"} alt={link.name} />
-        </a>
+        {link.href
+          ? <a href={link.href} target="blank">
+              <img height={30} src={link.name + ".svg"} alt={link.name} />
+            </a>
+          : <ClipboardButton
+              data-clipboard-text={link.clipboard}
+              component="a"
+              onSuccess={onClipboardSuccess}
+            >
+              <img height={30} src={link.name + ".svg"} alt={link.name} />
+            </ClipboardButton>}
       </li>
     ))}
   </ul>

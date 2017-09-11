@@ -28,6 +28,8 @@ const style = {
     }
   },
   item2: {
+    justifyContent: "center",
+    display: "flex",
     "@media (max-width: 1365px)": {
       order: 1,
       minWidth: "100%",

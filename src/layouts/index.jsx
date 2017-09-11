@@ -5,6 +5,8 @@ import "../assets/index.css";
 import SocialLinks from "../components/SocialLinks";
 import socialLinksData from "../../data/social-links.json";
 
+import Notification from "../components/Notification";
+
 export const style = {
   header: {
     display: "flex",
@@ -30,25 +32,51 @@ export const style = {
 
 // TODO:
 // - Add some metadata
-export default ({ children }) => (
-  <div>
-    <header css={style.header}>
-      <h1>@fabien0102</h1>
-      <SocialLinks data={socialLinksData} />
-      <div css={style.langs}>
-        <Link to="/"><img src="flag-fr.svg" height={25} alt="fr" /></Link>
-        <Link to="/en"><img src="flag-en.svg" height={25} alt="en" /></Link>
+export default class IndexLayout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { notification: null, haveNotification: false };
+  }
+  onClipboardSuccess() {
+    this.setState({
+      notification: "L’email a bien été copiée dans le presse papier !",
+      haveNotification: true
+    });
+    setTimeout(() => this.setState({ haveNotification: false }), 4000);
+  }
+
+  render() {
+    const { children } = this.props;
+    return (
+      <div>
+        <Notification
+          message={this.state.notification}
+          isShow={this.state.haveNotification}
+        />
+        <header css={style.header}>
+          <h1>@fabien0102</h1>
+          <SocialLinks
+            data={socialLinksData}
+            onClipboardSuccess={this.onClipboardSuccess.bind(this)}
+          />
+          <div css={style.langs}>
+            <Link to="/"><img src="flag-fr.svg" height={25} alt="fr" /></Link>
+            <Link to="/en"><img src="flag-en.svg" height={25} alt="en" /></Link>
+          </div>
+        </header>
+        <main>
+          {children()}
+        </main>
+        <footer css={style.footer}>
+          <p>
+            © {new Date().getFullYear() + " "}
+            -
+            {" "}
+            <span css={{ color: "#43bda6" }}>Fabien BERNARD (fabien0102) </span>
+            - Made with <span css={{ color: "#43bda6" }}>❤</span> with Gatsby
+          </p>
+        </footer>
       </div>
-    </header>
-    <main>
-      {children()}
-    </main>
-    <footer css={style.footer}>
-      <p>
-        © {new Date().getFullYear() + " "}
-        - <span css={{ color: "#43bda6" }}>Fabien BERNARD (fabien0102) </span>
-        - Made with <span css={{ color: "#43bda6" }}>❤</span> with Gatsby
-      </p>
-    </footer>
-  </div>
-);
+    );
+  }
+}
