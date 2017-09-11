@@ -38,8 +38,12 @@ export default class IndexLayout extends React.Component {
     this.state = { notification: null, haveNotification: false };
   }
   onClipboardSuccess() {
+    const message = this.props.location.pathname === "/en"
+      ? "Welldone! My email is in your clipboard ;)"
+      : "L’email a bien été copiée dans le presse papier !";
+
     this.setState({
-      notification: "L’email a bien été copiée dans le presse papier !",
+      notification: message,
       haveNotification: true
     });
     setTimeout(() => this.setState({ haveNotification: false }), 4000);
