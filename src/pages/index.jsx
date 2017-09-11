@@ -13,13 +13,34 @@ const style = {
     flexWrap: "wrap",
     alignItems: "center",
     marginTop: 30,
-    textAlign: "center"
+    textAlign: "center",
+    transition: "all 1s"
   },
   item: {
     flexBasis: 0,
     flexGrow: 1,
     maxWidth: 450,
-    minWidth: 300
+    minWidth: 450
+  },
+  item1: {
+    "@media (max-width: 1365px)": {
+      order: 2
+    }
+  },
+  item2: {
+    "@media (max-width: 1365px)": {
+      order: 1,
+      minWidth: "100%",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      flex: "0 0 100%"
+    }
+  },
+  item3: {
+    "@media (max-width: 1365px)": {
+      order: 3
+    }
   }
 };
 
@@ -29,9 +50,13 @@ export default ({ lang, data }) => {
   return (
     <div>
       <div css={style.container}>
-        <Skill data={skillsData[0]} containerCss={style.item} lang={lang} />
-        <Avatar />
-        <div css={style.item}>
+        <div css={{ ...style.item, ...style.item1 }}>
+          <Skill data={skillsData[0]} lang={lang} />
+        </div>
+        <div css={{ ...style.item, ...style.item2 }}>
+          <Avatar />
+        </div>
+        <div css={{ ...style.item, ...style.item3 }}>
           <Skill data={skillsData[1]} lang={lang} />
           <Skill data={skillsData[2]} lang={lang} />
         </div>

@@ -2,10 +2,15 @@ import React from "react";
 import Bodymovin from "@fabien0102/react-bodymovin";
 import * as animationData from "../../data/avatar-animation.json";
 
+const style = {
+  height: 350,
+  width: 350
+};
+
 export default class Avatar extends React.Component {
   componentDidMount() {
     // Start animation
-    this.avatar.animation.playSegments([0, 57], true);
+    this.avatar.animation.play();
   }
 
   onClick() {
@@ -20,13 +25,8 @@ export default class Avatar extends React.Component {
       animationData
     };
     return (
-      <div onClick={this.onClick.bind(this)}>
-        <Bodymovin
-          options={animationOptions}
-          height={350}
-          width={350}
-          ref={a => this.avatar = a}
-        />
+      <div onClick={this.onClick.bind(this)} css={style}>
+        <Bodymovin options={animationOptions} ref={a => this.avatar = a} />
       </div>
     );
   }

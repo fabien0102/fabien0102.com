@@ -12,8 +12,8 @@ const style = {
   }
 };
 
-export default ({ data: { title, logos }, lang, containerCss }) => (
-  <div css={containerCss}>
+export default ({ data: { title, logos }, lang }) => (
+  <div>
     <h1>{title[lang]}</h1>
     <ul css={style.list}>
       {logos.map(logo => (

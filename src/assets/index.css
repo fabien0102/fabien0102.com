@@ -8,7 +8,9 @@ body {
   color: white;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   color: #3ea191;
 }
 
@@ -18,6 +20,7 @@ a, a:visited, a:hover {
   margin-left: 2rem;
   max-width: 600px;
   transform: translate(48%, 0);
+  transition: all 1s;
 }
 
 .curriculum-item {
@@ -98,4 +101,29 @@ a, a:visited, a:hover {
   background-color: #43bda6;
   border: 4px #3ea191 solid;
   transform: translate(-50%, 0);
+}
+
+@media (max-width: 1365px) {
+  .curriculum-item--reverse {
+    transform: none;
+  }
+
+  .curriculum-item--reverse > div,
+  .curriculum-item--reverse > h2,
+  .curriculum-item--reverse > h3 {
+    transform: none;
+  }
+
+  .curriculum-item--reverse h2,
+  .curriculum-item--reverse h3 {
+    text-align: left;
+  }
+
+  .curriculum-list {
+    border-left: 6px solid #3ea191;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    max-width: 600px;
+    transform: none;
+  }
 }

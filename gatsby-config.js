@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    "gatsby-plugin-glamor",
     {
       resolve: "gatsby-source-filesystem",
       options: {
