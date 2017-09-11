@@ -11,7 +11,7 @@ const style = {
 };
 
 export default ({ lang, data }) => (
-  <div style={style.container}>
+  <div css={style.container}>
     <ul className="curriculum-list">
       {data.map(({ node }, i) => (
         <li

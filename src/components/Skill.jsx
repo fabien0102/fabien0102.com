@@ -12,12 +12,12 @@ const style = {
   }
 };
 
-export default ({ data: { title, logos }, lang, containerStyle }) => (
-  <div style={containerStyle}>
+export default ({ data: { title, logos }, lang, containerCss }) => (
+  <div css={containerCss}>
     <h1>{title[lang]}</h1>
-    <ul style={style.list}>
+    <ul css={style.list}>
       {logos.map(logo => (
-        <li style={style.item} key={logo.name}>
+        <li css={style.item} key={logo.name}>
           <a href={logo.url} target="blank">
             {logo.src
               ? <img src={logo.src} alt={logo.name} height={40} />

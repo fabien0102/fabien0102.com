@@ -32,10 +32,10 @@ export const style = {
 // - Add some metadata
 export default ({ children }) => (
   <div>
-    <header style={style.header}>
+    <header css={style.header}>
       <h1>@fabien0102</h1>
       <SocialLinks data={socialLinksData} />
-      <div style={style.langs}>
+      <div css={style.langs}>
         <Link to="/"><img src="flag-fr.svg" height={25} alt="fr" /></Link>
         <Link to="/en"><img src="flag-en.svg" height={25} alt="en" /></Link>
       </div>
@@ -43,11 +43,11 @@ export default ({ children }) => (
     <main>
       {children()}
     </main>
-    <footer style={style.footer}>
+    <footer css={style.footer}>
       <p>
         © {new Date().getFullYear() + " "}
-        - <span style={{ color: "#43bda6" }}>Fabien BERNARD (fabien0102) </span>
-        - Made with <span style={{ color: "#43bda6" }}>❤</span> with Gatsby
+        - <span css={{ color: "#43bda6" }}>Fabien BERNARD (fabien0102) </span>
+        - Made with <span css={{ color: "#43bda6" }}>❤</span> with Gatsby
       </p>
     </footer>
   </div>

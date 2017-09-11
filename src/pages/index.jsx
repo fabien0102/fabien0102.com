@@ -28,10 +28,10 @@ export default ({ lang, data }) => {
 
   return (
     <div>
-      <div style={style.container}>
-        <Skill data={skillsData[0]} containerStyle={style.item} lang={lang} />
+      <div css={style.container}>
+        <Skill data={skillsData[0]} containerCss={style.item} lang={lang} />
         <Avatar />
-        <div style={style.item}>
+        <div css={style.item}>
           <Skill data={skillsData[1]} lang={lang} />
           <Skill data={skillsData[2]} lang={lang} />
         </div>
