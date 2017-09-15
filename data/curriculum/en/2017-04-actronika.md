@@ -13,11 +13,12 @@ keywords:
   - github
 ---
 
-# TODO translate this
-Développement du logiciel Tactronik pour les kits de démonstration de la puce.
+Development of the software for the Tactronik chip's demonstration kits.
 
-Ce logiciel, réalisé avec Electron/React/Redux/Redux-observable/Jest, permet paramétrer les différents effets haptiques prédéfinis et les envoyer à la carte de démonstration via le port série. 
+This software, developed with Electron/React/Redux/Redux-observable/Jest, enables the configuration of different predefined haptic effects before sending them to the demonstration chip via the serial port. 
 
-Le challenge de ce projet était d'avoir une couche de communication série, et cela sans avoir à disposition la carte électronique pour tester avant la livraison. 
+The challenge was to have a layer of serial communication without having access to the chip to do testing before delivery.
 
-Grâce à redux-observable et une batterie de tests unitaires, la connection c'est fait sans accroc, le projet est facilement maintenable et évolutif.
+Using Redux-observable and a battery of unit tests, the connection succeeded without a hitch. The project can now be easily maintained and evolved. Isn't that great?
+
+[![web](web-badge.svg)](http://www.actronika.com)
