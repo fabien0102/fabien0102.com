@@ -30,8 +30,6 @@ export const style = {
   }
 };
 
-// TODO:
-// - Add some metadata
 export default class IndexLayout extends React.Component {
   constructor(props) {
     super(props);
@@ -78,6 +76,7 @@ export default class IndexLayout extends React.Component {
             {" "}
             <span css={{ color: "#43bda6" }}>Fabien BERNARD (fabien0102) </span>
             - Made with <span css={{ color: "#43bda6" }}>❤</span> with Gatsby
+            - Translation by <span css={{ color: "#43bda6" }}>Lucrèce ROLLAND</span>
           </p>
         </footer>
       </div>
