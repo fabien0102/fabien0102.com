@@ -37,7 +37,7 @@ export default class IndexLayout extends React.Component {
   }
   onClipboardSuccess() {
     const message = this.props.location.pathname === "/en"
-      ? "Welldone! My email is in your clipboard ;)"
+      ? "Well done! My email adress is in your clipboard ;)"
       : "L’email a bien été copiée dans le presse papier !";
 
     this.setState({
