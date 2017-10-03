@@ -10,7 +10,7 @@ module.exports = {
     },
     "gatsby-transformer-yaml",
     "gatsby-transformer-remark",
-     {
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "Fabien0102 website",
@@ -18,9 +18,15 @@ module.exports = {
         start_url: "/",
         background_color: "#012f56",
         theme_color: "#3ea191",
-        display: "minimal-ui",
-      },
+        display: "minimal-ui"
+      }
     },
-    "gatsby-plugin-offline"
+    "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-107444198-1"
+      }
+    }
   ]
-}
+};
