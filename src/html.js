@@ -3,7 +3,7 @@ import React from "react";
 const meta = {
   title: "@fabien0102 website",
   description: "Développeur fullstack JavaScript, voici un tour d’horizon de mes différents projets.",
-  image: "https://fabien0102.com/card.jpg",
+  image: "https://fabien0102.com/social-card.jpg",
   url: "https://fabien0102.com",
   author: "@fabien0102"
 };
