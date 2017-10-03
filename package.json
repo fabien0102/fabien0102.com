@@ -25,6 +25,7 @@
     "gatsby-plugin-google-analytics": "^1.0.8",
     "gatsby-plugin-manifest": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.9",
+    "gatsby-plugin-sitemap": "^1.2.5",
     "gatsby-source-filesystem": "^1.4.9",
     "gatsby-transformer-remark": "^1.7.5",
     "gatsby-transformer-yaml": "^1.5.6",

@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://fabien0102.com`
+  },
   plugins: [
     "gatsby-plugin-glamor",
     {
@@ -22,6 +25,9 @@ module.exports = {
       }
     },
     "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-plugin-sitemap`
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
