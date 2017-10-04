@@ -27,12 +27,6 @@ module.exports = {
     "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-sitemap`
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-107444198-1"
-      }
     }
   ]
 };
