@@ -26,4 +26,4 @@ Usant de mon expérience personnelle dans le graphisme, j'ai aussi su diriger et
 
 Enfin, dernier chantier où nous avons énormément expérimenté et appris, la gestion de projet. De la méthode [la RACHE](http://www.la-rache.com/), à la mise en place de méthodes Agiles (Scrum puis Kanban), nous avons pu constater les avantages/inconvénients de chaque méthode, les adapter et progresser !
 
-[![web](web-badge.svg)](http://vinoga.com/
+[![web](web-badge.svg)](http://vinoga.com/)
