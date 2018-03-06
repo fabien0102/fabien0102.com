@@ -21,4 +21,4 @@ In the end, the product works and the client's requirements were fulfilled!
 I also used this first mission for Actronika as an opportunity to train the team in React/Redux/TypeScript/Jest, so as to allow an easy hand-over.
 
 
-[![web](web-badge.svg)](http://www.actronika.com)
+[![web](/web-badge.svg)](http://www.actronika.com)

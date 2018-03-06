@@ -21,4 +21,4 @@ Le challenge de ce projet était d'avoir une couche de communication série, et 
 
 Grâce à Redux-observable et une batterie de tests unitaires, la connexion s'est fait sans accroc. Le projet est facilement maintenable et évolutif. Et ça, c'est cool !
 
-[![web](web-badge.svg)](http://www.actronika.com)
+[![web](/web-badge.svg)](http://www.actronika.com)

@@ -62,8 +62,8 @@ export default class IndexLayout extends React.Component {
             onClipboardSuccess={this.onClipboardSuccess.bind(this)}
           />
           <div css={style.langs}>
-            <Link to="/"><img src="flag-fr.svg" height={25} alt="fr" /></Link>
-            <Link to="/en"><img src="flag-en.svg" height={25} alt="en" /></Link>
+            <Link to="/"><img src="/flag-fr.svg" height={25} alt="fr" /></Link>
+            <Link to="/en"><img src="/flag-en.svg" height={25} alt="en" /></Link>
           </div>
         </header>
         <main>

@@ -20,4 +20,4 @@ Finalement le produit marche parfaitement, et le cahier des charges a été resp
 
 J'ai aussi profité de cette première mission avec Actronika pour former l'équipe à React/Redux/TypeScript/Jest. L'objectif étant une reprise facile du projet !
 
-[![web](web-badge.svg)](http://www.actronika.com)
+[![web](/web-badge.svg)](http://www.actronika.com)
