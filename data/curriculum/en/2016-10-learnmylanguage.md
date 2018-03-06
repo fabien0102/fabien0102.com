@@ -26,6 +26,6 @@ My responsibilities and projects included:
 - A standard administration interface to enable importing lessons from an excel file and modify the online content in real time.
 - Implementation of the project organisation (Team services, Kanban).
 
-[![web](web-badge.svg)](https://speekoo.com)
-[![app-store](app-store-badge-fr.svg)](https://itunes.apple.com/be/app/speekoo/id1171852940?mt=8)
-[![play-store](google-play-badge-fr.svg)](https://play.google.com/store/apps/details?id=com.ionicframework.speekooappv2208928&hl=fr)
+[![web](/web-badge.svg)](https://speekoo.com)
+[![app-store](/app-store-badge-fr.svg)](https://itunes.apple.com/be/app/speekoo/id1171852940?mt=8)
+[![play-store](/google-play-badge-fr.svg)](https://play.google.com/store/apps/details?id=com.ionicframework.speekooappv2208928&hl=fr)

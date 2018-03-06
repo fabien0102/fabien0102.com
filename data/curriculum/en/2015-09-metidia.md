@@ -26,4 +26,4 @@ Using my personal experience in graphic design, I was also able to lead and trai
 
 Our last field of experimentation was project management. From "on-the-fly" development to the the implementation of agile methods (Scrum first, then Kanban), we were able to ascertain the pros and cons of each method, adapt them and learn from them.
 
-[![web](web-badge.svg)](http://vinoga.com/)
+[![web](/web-badge.svg)](http://vinoga.com/)

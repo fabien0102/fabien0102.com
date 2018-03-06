@@ -27,6 +27,6 @@ Mes différents projets/responsabilités ont été :
  - Une interface d'administration, permettant d'importer les cours/fiches à partir d'un fichier Excel et de modifier à la volée le contenu en ligne.
  - Mise en place de l'organisation projet (Team services, Kanban)
 
-[![web](web-badge.svg)](https://speekoo.com)
-[![app-store](app-store-badge-fr.svg)](https://itunes.apple.com/be/app/speekoo/id1171852940?mt=8)
-[![play-store](google-play-badge-fr.svg)](https://play.google.com/store/apps/details?id=com.ionicframework.speekooappv2208928&hl=fr)
+[![web](/web-badge.svg)](https://speekoo.com)
+[![app-store](/app-store-badge-fr.svg)](https://itunes.apple.com/be/app/speekoo/id1171852940?mt=8)
+[![play-store](/google-play-badge-fr.svg)](https://play.google.com/store/apps/details?id=com.ionicframework.speekooappv2208928&hl=fr)

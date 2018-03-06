@@ -19,14 +19,14 @@ export default ({ data, onClipboardSuccess }) => (
       <li css={styles.item} key={link.name}>
         {link.href
           ? <a href={link.href} target="blank">
-              <img height={30} src={link.name + ".svg"} alt={link.name} />
+              <img height={30} src={`/${link.name}.svg`} alt={link.name} />
             </a>
           : <ClipboardButton
               data-clipboard-text={link.clipboard}
               component="a"
               onSuccess={onClipboardSuccess}
             >
-              <img height={30} src={link.name + ".svg"} alt={link.name} />
+              <img height={30} src={`/${link.name}.svg`} alt={link.name} />
             </ClipboardButton>}
       </li>
     ))}

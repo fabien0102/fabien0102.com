@@ -21,4 +21,4 @@ The challenge was to have a layer of serial communication without having access 
 
 Using Redux-observable and a battery of unit tests, the connection succeeded without a hitch. The project can now be easily maintained and evolved. Isn't that great?
 
-[![web](web-badge.svg)](http://www.actronika.com)
+[![web](/web-badge.svg)](http://www.actronika.com)

@@ -2,28 +2,28 @@
   {
     "title": {"fr": "Fullstack JavaScript", "en": "Fullstack JavaScript"},
     "logos": [
-      {"name": "React", "src": "react.svg", "url": "https://facebook.github.io/react/"},
-      {"name": "Redux", "src": "redux.svg", "url": "http://redux.js.org/"},
-      {"name": "RxJS", "src": "rxjs.png", "url": "http://reactivex.io/rxjs/"},
-      {"name": "Jest", "src": "jest.svg", "url": "https://facebook.github.io/jest/"},
-      {"name": "Angular", "src": "angular.svg", "url": "https://angular.io/"},
-      {"name": "JavaScript", "src": "javascript.svg", "url": "https://www.w3schools.com/js/"},
-      {"name": "TypeScript", "src": "typescript.svg", "url": "https://www.typescriptlang.org/"},
-      {"name": "Ionic", "src": "ionic.svg", "url": "https://ionicframework.com/"},
-      {"name": "Firebase", "src": "firebase.svg", "url": "https://firebase.google.com/"},
-      {"name": "MongoDB", "src": "mongodb.svg", "url": "https://www.mongodb.com/"},
-      {"name": "GraphQL", "src": "graphql.svg", "url": "http://graphql.org/"},
-      {"name": "NodeJS", "src": "nodejs.svg", "url": "https://nodejs.org"},
-      {"name": "Webpack", "src": "webpack.svg", "url": "https://webpack.js.org/"}
+      {"name": "React", "src": "/react.svg", "url": "https://facebook.github.io/react/"},
+      {"name": "Redux", "src": "/redux.svg", "url": "http://redux.js.org/"},
+      {"name": "RxJS", "src": "/rxjs.png", "url": "http://reactivex.io/rxjs/"},
+      {"name": "Jest", "src": "/jest.svg", "url": "https://facebook.github.io/jest/"},
+      {"name": "Angular", "src": "/angular.svg", "url": "https://angular.io/"},
+      {"name": "JavaScript", "src": "/javascript.svg", "url": "https://www.w3schools.com/js/"},
+      {"name": "TypeScript", "src": "/typescript.svg", "url": "https://www.typescriptlang.org/"},
+      {"name": "Ionic", "src": "/ionic.svg", "url": "https://ionicframework.com/"},
+      {"name": "Firebase", "src": "/firebase.svg", "url": "https://firebase.google.com/"},
+      {"name": "MongoDB", "src": "/mongodb.svg", "url": "https://www.mongodb.com/"},
+      {"name": "GraphQL", "src": "/graphql.svg", "url": "http://graphql.org/"},
+      {"name": "NodeJS", "src": "/nodejs.svg", "url": "https://nodejs.org"},
+      {"name": "Webpack", "src": "/webpack.svg", "url": "https://webpack.js.org/"}
     ]
   },
   {
     "title": {"fr": "DevOps", "en": "DevOps"},
     "logos": [
-      {"name": "Docker", "src": "docker.svg", "url": "https://www.docker.com/"},
-      {"name": "AWS", "src": "aws.svg", "url": "https://aws.amazon.com/fr/"},
-      {"name": "Jenkins", "src": "jenkins.svg", "url": "https://jenkins.io/"},
-      {"name": "Azure", "src": "azure.svg", "url": "https://azure.microsoft.com"}
+      {"name": "Docker", "src": "/docker.svg", "url": "https://www.docker.com/"},
+      {"name": "AWS", "src": "/aws.svg", "url": "https://aws.amazon.com/fr/"},
+      {"name": "Jenkins", "src": "/jenkins.svg", "url": "https://jenkins.io/"},
+      {"name": "Azure", "src": "/azure.svg", "url": "https://azure.microsoft.com"}
     ]
   },
   {
@@ -32,8 +32,8 @@
       {"name": "LEAN", "url": "https://fr.wikipedia.org/wiki/Lean_(production)"},
       {"name": "Kanban", "url": "https://fr.wikipedia.org/wiki/Kanban"},
       {"name": "Scrum", "url": "https://fr.wikipedia.org/wiki/Scrum_(Boite_%C3%A0_outils)"},
-      {"name": "Trello", "src": "trello.svg", "url": "https://trello.com/"},
-      {"name": "Github", "src": "github.svg", "url": "https://github.com/"}
+      {"name": "Trello", "src": "/trello.svg", "url": "https://trello.com/"},
+      {"name": "Github", "src": "/github.svg", "url": "https://github.com/"}
     ]
   }
 ]
