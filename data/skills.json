@@ -4,6 +4,7 @@
     "logos": [
       {"name": "React", "src": "/react.svg", "url": "https://facebook.github.io/react/"},
       {"name": "Redux", "src": "/redux.svg", "url": "http://redux.js.org/"},
+      {"name": "Apollo", "src": "/apollo.svg", "url": "https://www.apollodata.com/"},
       {"name": "RxJS", "src": "/rxjs.png", "url": "http://reactivex.io/rxjs/"},
       {"name": "Jest", "src": "/jest.svg", "url": "https://facebook.github.io/jest/"},
       {"name": "Angular", "src": "/angular.svg", "url": "https://angular.io/"},
