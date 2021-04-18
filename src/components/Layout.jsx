@@ -46,10 +46,10 @@ const Layout = ({ lang, children }) => {
           onClipboardSuccess={() => setShowNotif(true)}
         />
         <Langs>
-          <Link to="/">
+          <Link to="/fr">
             <img src="/flag-fr.svg" height={25} alt="fr" />
           </Link>
-          <Link to="/en">
+          <Link to="/">
             <img src="/flag-en.svg" height={25} alt="en" />
           </Link>
         </Langs>

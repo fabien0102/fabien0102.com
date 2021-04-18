@@ -5,25 +5,25 @@ import Avatar from "../components/Avatar";
 import Skill from "../components/Skill";
 import Curriculum from "../components/Curriculum";
 import Layout from "../components/Layout";
+import Bio from "../components/Bio";
 
 import skillsData from "../../data/skills.json";
 import styled from "@emotion/styled";
 
 const IndexPage = ({ lang, data }) => {
-  lang = lang || "fr";
+  lang = lang || "en";
 
   return (
     <Layout lang={lang}>
       <Container>
         <StartItem>
-          <Skill data={skillsData[0]} lang={lang} />
+          <Skill data={skillsData} lang={lang} />
         </StartItem>
         <CenterItem>
           <Avatar />
         </CenterItem>
         <EndItem>
-          <Skill data={skillsData[1]} lang={lang} />
-          <Skill data={skillsData[2]} lang={lang} />
+          <Bio data={data.bio} />
         </EndItem>
       </Container>
 
@@ -79,7 +79,7 @@ export default IndexPage;
 export const pageQuery = graphql`
   query IndexQuery {
     curriculum: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//fr//" } }
+      filter: { fileAbsolutePath: { regex: "/curriculum/en/" } }
       sort: { order: DESC, fields: [fileAbsolutePath] }
     ) {
       edges {
@@ -91,6 +91,12 @@ export const pageQuery = graphql`
             keywords
           }
         }
+      }
+    }
+    bio: markdownRemark(fileAbsolutePath: { regex: "/bio/en/" }) {
+      html
+      frontmatter {
+        title
       }
     }
   }
