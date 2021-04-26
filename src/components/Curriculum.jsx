@@ -135,6 +135,7 @@ const Tags = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  color: #3ea191;
 
   i:not(:last-of-type) {
     margin-right: 4px;
