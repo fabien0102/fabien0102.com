@@ -40,6 +40,10 @@ const Container = styled.div`
   margin-top: 30px;
   text-align: center;
   transition: all 1s;
+
+  @media (max-width: 1365px) {
+    flex-direction: column;
+  }
 `;
 
 const Item = styled.div`
@@ -52,6 +56,7 @@ const Item = styled.div`
 const StartItem = styled(Item)`
   @media (max-width: 1365px) {
     order: 2;
+    max-width: 80vw;
   }
 `;
 
@@ -71,6 +76,7 @@ const CenterItem = styled(Item)`
 const EndItem = styled(Item)`
   @media (max-width: 1365px) {
     order: 3;
+    max-width: 80vw;
   }
 `;
 
