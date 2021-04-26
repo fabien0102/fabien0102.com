@@ -1,33 +1,41 @@
-import React from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import Bodymovin from "@fabien0102/react-bodymovin";
 import * as animationData from "../../data/avatar-animation.json";
+import styled from "@emotion/styled";
 
-const style = {
-  height: 350,
-  width: 350
+const Avatar = () => {
+  const avatarRef = useRef();
+
+  // Start animation on load
+  useEffect(() => {
+    if (avatarRef.current) {
+      avatarRef.current.animation.play();
+    }
+  }, [avatarRef]);
+
+  // Play the "wink" animation
+  const wink = useCallback(() => {
+    if (avatarRef.current) {
+      avatarRef.current.animation.playSegments([60, 80], true);
+    }
+  }, [avatarRef]);
+
+  const animationOptions = {
+    loop: false,
+    autoplay: false,
+    animationData,
+  };
+
+  return (
+    <Container onClick={wink}>
+      <Bodymovin options={animationOptions} ref={avatarRef} />
+    </Container>
+  );
 };
 
-export default class Avatar extends React.Component {
-  componentDidMount() {
-    // Start animation
-    this.avatar.animation.play();
-  }
+const Container = styled.div`
+  height: 350px;
+  width: 350px;
+`;
 
-  onClick() {
-    // Wink ation
-    this.avatar.animation.playSegments([60, 80], true);
-  }
-
-  render() {
-    const animationOptions = {
-      loop: false,
-      autoplay: false,
-      animationData
-    };
-    return (
-      <div onClick={this.onClick.bind(this)} css={style}>
-        <Bodymovin options={animationOptions} ref={a => this.avatar = a} />
-      </div>
-    );
-  }
-}
+export default Avatar;

@@ -1,30 +1,34 @@
+import styled from "@emotion/styled";
 import React from "react";
 
-const style = {
-  list: {
-    listStyle: "none",
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center"
-  },
-  item: {
-    margin: "0.5em 1em"
-  }
-};
-
-export default ({ data: { title, logos }, lang }) => (
+const Skill = ({ data: { title, logos }, lang }) => (
   <div>
     <h1>{title[lang]}</h1>
-    <ul css={style.list}>
-      {logos.map(logo => (
-        <li css={style.item} key={logo.name}>
+    <List>
+      {logos.map((logo) => (
+        <ListItem key={logo.name}>
           <a href={logo.url} target="blank">
-            {logo.src
-              ? <img src={logo.src} alt={logo.name} height={40} />
-              : logo.name}
+            {logo.src ? (
+              <img src={logo.src} alt={logo.name} height={40} />
+            ) : (
+              logo.name
+            )}
           </a>
-        </li>
+        </ListItem>
       ))}
-    </ul>
+    </List>
   </div>
 );
+
+const ListItem = styled.li`
+  margin: 0.5em 1em;
+`;
+
+const List = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+export default Skill;
