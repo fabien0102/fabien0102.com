@@ -41,10 +41,7 @@ const Layout = ({ lang, children }) => {
       <Notification lang={lang} isShow={showNotif} />
       <Header>
         <h1>@fabien0102</h1>
-        <SocialLinks
-          data={socialLinksData}
-          onClipboardSuccess={() => setShowNotif(true)}
-        />
+        
         <Langs>
           <Link to="/fr">
             <img src="/flag-fr.svg" height={25} alt="fr" />
