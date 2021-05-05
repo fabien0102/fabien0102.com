@@ -71,9 +71,7 @@ export default Layout;
 
 const Header = styled.header`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 0 1.5rem;
 `;
 
@@ -90,6 +88,7 @@ const Langs = styled.div`
   flex-direction: column;
   position: relative;
   top: 0.6rem;
+  margin-left: auto;
 `;
 
 const Colored = styled.span`

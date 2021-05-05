@@ -26,14 +26,36 @@ const SocialLinks = ({ data, onClipboardSuccess }) => (
 );
 
 const List = styled.ul`
-  display: flex;
-  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  gap: .5rem;
   list-style: none;
-  flex-grow: 1;
+  background: #000b;
+  margin: 0;
+  padding: .5rem 0;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  z-index: 30000;
+
+  @media (min-width: 768px) {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    flex-grow: 1;
+    background: transparent;
+    margin-left: auto;
+  }
 `;
 
 const ListItem = styled.li`
+@media (min-width: 768px) {
   margin: 0 1.2em;
+}
 `;
 
 export default SocialLinks;
