@@ -23,6 +23,14 @@ const globalStyle = css`
   a:hover {
     color: #3ea191;
   }
+  @media print {
+    body {
+      color: black;
+    }
+    footer {
+      display: none;
+    }
+  }
 `;
 
 const Layout = ({ lang, children }) => {
