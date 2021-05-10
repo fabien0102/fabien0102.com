@@ -12,6 +12,7 @@ const HTML = ({ body, postBodyComponents, headComponents }) => (
     <head>
       {headComponents}
       <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <title>@fabien0102</title>
       <meta name="description" content={meta.description} />
