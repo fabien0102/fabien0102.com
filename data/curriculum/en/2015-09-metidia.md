@@ -16,7 +16,7 @@ keywords:
   - trello
 ---
 
-My greatest adventure (until now)! Vinoga, the social farming game set in the worl of wine-making.
+My greatest adventure (until now)! Vinoga, the social farming game set in the world of wine-making.
 
 As a team of two developers, we implemented not only an entire game but also a complete developing environment to optimize our efficiency. I was personally responsible for the architecture of the servers and back-end. Architecture-wise, everything can be deployed and versionned on cloud formation, including a jenkins, a redis, and a system to manage docker instances. All of it is deployed continuously with 0 downtime.
 
