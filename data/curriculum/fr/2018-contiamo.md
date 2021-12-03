@@ -1,5 +1,5 @@
 ---
-date: 2018 - Maintenant
+date: 2018 - 2021
 title: Senior TypeScript Engineer / Techlead Frontend - Contiamo
 keywords:
   - typescript
