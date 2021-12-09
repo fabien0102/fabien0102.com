@@ -1,5 +1,5 @@
 ---
-date: September 2021 - November 2021
+date: Septembre - Novembre 2021
 title: Senior TypeScript Engineer - Chatterbug
 keywords:
   - typescript
