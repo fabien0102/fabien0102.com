@@ -1,0 +1,85 @@
+---
+import GithubIcon from "../assets/github.svg";
+import LinkedinIcon from "../assets/linkedin.svg";
+import TwitterIcon from "../assets/twitter.svg";
+---
+
+<div
+  class="grid grid-cols-[max-content_auto] lg:grid-cols-[1fr_min-content_1fr] gap-x-10 gap-y-8 lg:gap-y-2 p-8 pb-0 text-teal-900 text-md max-w-6xl m-auto"
+>
+  <div class="lg:justify-self-end lg:self-end self-start">
+    <h1>Fabien Bernard</h1>
+    <h2>Fullstack TypeScript Engineer</h2>
+  </div>
+  <div
+    class="justify-self-end self-start lg:col-start-1 lg:justify-self-center"
+  >
+    <a
+      href="https://github.com/fabien0102"
+      target="_blank"
+      class="flex gap-3 items-center text-xl text-teal-900 underline underline-offset-4"
+      ><GithubIcon class="fill-teal-900 size-6" />@fabien0102</a
+    >
+    <a
+      href="https://x.com/fabien0102"
+      target="_blank"
+      class="flex gap-3 items-center text-xl text-teal-900 pt-2 underline underline-offset-4"
+      ><TwitterIcon class="fill-teal-900 size-6" />@fabien0102</a
+    >
+    <a
+      href="https://www.linkedin.com/in/fabien0102"
+      target="_blank"
+      class="flex gap-3 items-center text-xl text-teal-900 pt-2 underline underline-offset-4"
+      ><LinkedinIcon class="fill-teal-900 size-6" />/fabien0102</a
+    >
+  </div>
+  <div
+    class="flex items-end justify-center lg:col-start-2 lg:row-span-2 lg:row-start-1"
+  >
+    <div
+      class="size-60 rounded-full bg-[url(src/assets/fabien-bernard.png)] bg-cover border-4 border-teal-700"
+    >
+    </div>
+  </div>
+  <div
+    class="self-center with-quotes order-3 pr-3 max-w-md lg:col-start-3 lg:row-span-2 lg:row-start-1"
+  >
+    <p>
+      The beauty is in simplicity, creating complex piece of software follow the
+      same rule. I enjoy creating nice product (with amazing UX) and tooling
+      (with amazing DX) that are simple to use and maintain (testability and
+      observability are keys).
+    </p>
+    <p>
+      Any complex problem can be split in a smaller one. I also apply this
+      principles in my hobbies, such as woodworking and climbing. With this
+      mindset, nothing is impossible!
+    </p>
+  </div>
+</div>
+
+<style>
+  @reference "../styles/global.css";
+
+  h1 {
+    @apply text-4xl text-teal-600 font-bold;
+  }
+  h2 {
+    @apply text-xl text-teal-700;
+  }
+  p:not(:last-of-type) {
+    @apply pb-2;
+  }
+
+  .with-quotes {
+    @apply relative;
+  }
+  .with-quotes::before {
+    content: "“";
+    @apply absolute -top-7 -left-7 text-7xl font-serif;
+  }
+  .with-quotes::after {
+    content: "”";
+    @apply absolute -bottom-20 right-0 text-7xl font-serif lg:-bottom-14 lg:-right-4;
+  }
+</style>

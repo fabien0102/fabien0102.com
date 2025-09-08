@@ -1,0 +1,69 @@
+---
+import { render } from "astro:content";
+import { getCollection } from "astro:content";
+
+const experiences = await getCollection("curriculum");
+---
+
+<ul
+  class="grid grid-cols-[min-content 1fr] lg:grid-cols-[1fr min-content 1fr] p-8 max-w-6xl m-auto pt-0"
+>
+  {
+    experiences
+      .sort((a, b) => b.filePath!.localeCompare(a.filePath!))
+      .map(async (xp) => {
+        const { title, date, keywords } = xp.data;
+        const { Content } = await render(xp);
+
+        return (
+          <li class="group grid grid-cols-subgrid col-span-2 lg:col-span-3 grid-rows-subgrid lg:first:pt-8">
+            <div
+              aria-hidden="true"
+              class="lg:col-start-2 flex justify-center relative"
+            >
+              {/* Line */}
+              <div class="bg-teal-700 w-1 absolute lg:-top-8 top-0 left-1/2 -translate-x-[var(--spacing)/2] h-full -z-10" />
+              {/* Dot */}
+              <div class="bg-teal-500 border-teal-700 border-2 size-7 rounded-full mt-9" />
+            </div>
+
+            <div class="lg:group-even:col-start-1 p-4">
+              <h3 class="lg:group-even:text-right font-medium text-sm text-teal-700">
+                {date}
+              </h3>
+              <h1 class="lg:group-even:text-right text-lg font-bold text-teal-900">
+                {title}
+              </h1>
+              <Content />
+              <div class="flex gap-2 flex-wrap mt-2">
+                {keywords.map((keyword) => (
+                  <div class="px-2 py-0.5 bg-teal-500 text-white rounded-md text-sm">
+                    {keyword}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </li>
+        );
+      })
+  }
+</ul>
+
+<style>
+  @reference "../styles/global.css";
+
+  li {
+    h2 {
+      @apply text-gray-800 font-semibold text-sm;
+    }
+    p {
+      @apply text-base max-w-xl pb-2 text-teal-950;
+    }
+    ul {
+      @apply list-disc pl-8 mb-2;
+    }
+    a {
+      @apply underline text-teal-600;
+    }
+  }
+</style>
