@@ -6,7 +6,7 @@ const experiences = await getCollection("curriculum");
 ---
 
 <ul
-  class="grid grid-cols-[min-content 1fr] lg:grid-cols-[1fr min-content 1fr] p-8 max-w-6xl m-auto pt-0"
+  class="grid grid-cols-[min-content 1fr] lg:grid-cols-[1fr min-content 1fr] p-8 max-w-6xl m-auto pt-0 md:ml-28 lg:ml-auto"
 >
   {
     experiences
@@ -16,13 +16,13 @@ const experiences = await getCollection("curriculum");
         const { Content } = await render(xp);
 
         return (
-          <li class="group grid grid-cols-subgrid col-span-2 lg:col-span-3 grid-rows-subgrid lg:first:pt-8">
+          <li class="group grid grid-cols-subgrid col-span-2 lg:col-span-3 grid-rows-subgrid md:first:pt-8">
             <div
               aria-hidden="true"
               class="lg:col-start-2 flex justify-center relative"
             >
               {/* Line */}
-              <div class="bg-teal-700 w-1 absolute lg:-top-8 top-0 left-1/2 -translate-x-[var(--spacing)/2] h-full -z-10" />
+              <div class="bg-teal-700 w-1 absolute md:-top-8 top-9 left-1/2 -translate-x-[var(--spacing)/2] h-full -z-10" />
               {/* Dot */}
               <div class="bg-teal-500 border-teal-700 border-2 size-7 rounded-full mt-9" />
             </div>
