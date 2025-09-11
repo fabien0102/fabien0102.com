@@ -14,13 +14,13 @@ function join(...args: string[]) {
 <div
   class={join(
     "grid grid-cols-[min-content_auto] md:grid-cols-[max-content_max-content] lg:grid-cols-[1fr_min-content_1fr]",
-    "gap-x-10 gap-y-8 lg:gap-y-2 min-sm:max-md:gap-y-2",
+    "gap-x-10 gap-y-8 lg:gap-y-2 min-sm:max-md:gap-y-2 max-sm:gap-x-0",
     "p-8 pb-0 max-w-6xl m-auto",
     "text-teal-900 text-md"
   )}
 >
   <div
-    class="col-start-2 md:col-start-1 lg:justify-self-end lg:self-end self-start"
+    class="max-sm:justify-self-center col-start-2 md:col-start-1 lg:justify-self-end lg:self-end self-start"
   >
     <h1>Fabien Bernard</h1>
     <h2>Fullstack TypeScript Engineer</h2>
@@ -79,7 +79,10 @@ function join(...args: string[]) {
   </div>
   <div
     class={join(
-      // Small / Medium screens - Profile picture is on the left
+      // Small screen - Profile picture take the full width
+      "max-sm:col-span-2",
+
+      // Medium screen - Profile picture is on the left
       "col-start-1 flex items-end justify-center",
 
       // Small to Medium - Links are under the title, so the picture needs to take 2 rows
@@ -93,14 +96,14 @@ function join(...args: string[]) {
     )}
   >
     <div
-      class="size-40 md:size-60 rounded-full bg-[url(src/assets/fabien-bernard.png)] bg-cover border-4 border-teal-700"
+      class="size-40 md:size-60 rounded-full bg-[url(/fabien-bernard.png)] bg-cover border-4 border-teal-700"
     >
     </div>
   </div>
   <div
     class={join(
       "md:col-span-1 col-span-2 self-center with-quotes order-3 pr-3 md:max-w-md lg:col-start-3 lg:row-span-2 lg:row-start-1",
-      "min-sm:max-md:my-8"
+      "max-md:my-8 max-md:mx-8"
     )}
   >
     <p>
